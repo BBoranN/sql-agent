@@ -7,7 +7,8 @@ class OpenAI {
     this.api = new ChatGPT.ChatGPTAPI({
       apiKey: process.env.OPENAI_API_KEY!,
       completionParams: {
-        temperature: 0
+        temperature: 0,
+        model: 'gpt-4-turbo',
       }
     });
   }
